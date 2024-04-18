@@ -1,0 +1,140 @@
+@import url("https://fonts.google.com/specimen/Montserrat");
+:root {
+  --Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+  --Light-Grayish-Blue: hsl(234, 14%, 74%);
+  --Grayish-Blue: hsl(233, 13%, 49%);
+  --Dark-Grayish-Blue: hsl(232, 13%, 33%);
+}
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+body {
+  max-width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background-color: var(--Very-Light-Grayish-Blue);
+}
+#back-top-img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+}
+#back-b-img {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  bottom: 0;
+}
+main {
+  max-width: 100%;
+  max-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2em;
+}
+#top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1em;
+  margin-bottom: 2em;
+}
+h1 {
+  color: var(--Grayish-Blue);
+}
+#toogle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.8em;
+  margin-top: 1em;
+  color: var(--Light-Grayish-Blue);
+}
+.toogle-btn {
+  padding: 0.5em 2em;
+  border-radius: 2em;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+#cards {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  text-align: center;
+  max-width: 25em;
+}
+.card {
+  min-width: 20em;
+  border-radius: 1em;
+  padding: 1em;
+  background-color: white;
+}
+.card:nth-last-child(2) {
+}
+.data {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1em;
+  font: bolder;
+  font-size: 1.2em;
+  color: var(--Grayish-Blue);
+}
+.storage {
+  border-top: 1px solid var(--Light-Grayish-Blue);
+  border-bottom: 1px solid var(--Light-Grayish-Blue);
+  padding: 1em 0;
+}
+.user {
+  border-bottom: 1px solid var(--Light-Grayish-Blue);
+  padding: 1em 0;
+}
+.allowed-send {
+  border-bottom: 1px solid var(--Light-Grayish-Blue);
+  padding: 1em 0;
+  margin-bottom: 1em;
+}
+h4 {
+  color: var(--Grayish-Blue);
+  font: 900;
+  font-size: 1.5em;
+  margin-bottom: 0.4em;
+}
+.price span {
+  font-size: 2.5em;
+  color: var(--Dark-Grayish-Blue);
+  margin: 0.4em;
+}
+.month-price {
+  display: block;
+}
+.year-price {
+  display: none;
+}
+
+@media (max-width: 62em) {
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 200vh;
+  }
+  #back-b-img {
+  }
+  #cards {
+    flex-direction: column;
+    min-width: 22em;
+  }
+}
