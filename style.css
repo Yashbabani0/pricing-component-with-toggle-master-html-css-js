@@ -177,11 +177,14 @@ h4 {
   width: 90%;
   height: 6vh;
   margin-top: 1em;
+  margin-bottom: 1em;
   cursor: pointer;
   border-radius: 0.6em;
   background-color: hsl(237, 63%, 64%);
   color: white;
   border: none;
+  font-weight: 800;
+  word-spacing: 2px;
 }
 .main-btn:hover {
   background: transparent;
@@ -192,13 +195,19 @@ h4 {
   color: white;
 }
 #cards .card:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
-  height: 64vh;
+  height: 58vh;
 }
 #cards .card:nth-child(2) button {
   background-color: white;
   color: hsl(237, 63%, 64%);
   border: none;
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 #cards .card:nth-child(2) button:hover {
   background-color: transparent;
@@ -212,11 +221,15 @@ h4 {
     height: 100vh;
     max-width: 100%;
   }
+  #back-b-img {
+    display: none;
+  }
   main {
     margin-bottom: 2em;
   }
   #cards {
     flex-direction: column;
     min-width: 22em;
+    gap: 2em;
   }
 }
