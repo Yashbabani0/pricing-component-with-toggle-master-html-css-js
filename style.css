@@ -199,7 +199,7 @@ h4 {
   flex-direction: column;
   justify-content: center;
   background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
-  height: 58vh;
+  height: 60vh;
 }
 #cards .card:nth-child(2) button {
   background-color: white;
