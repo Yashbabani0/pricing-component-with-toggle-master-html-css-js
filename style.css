@@ -208,6 +208,7 @@ h4 {
   margin: auto;
   margin-top: 1em;
   margin-bottom: 1em;
+  height: 6vh;
 }
 #cards .card:nth-child(2) button:hover {
   background-color: transparent;
